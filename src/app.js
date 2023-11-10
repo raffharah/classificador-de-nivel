@@ -18,7 +18,7 @@ function confirma() {
 
     //validador de condição, para garantia de pontos seja digitado corretamente
     if (rank < Ferro[0] || rank > Radiante[1]) {
-        document.getElementById("resultado").innerHTML = "O valor do elo deve estar entre 0(mínimo) e 15000(máximo).";
+        document.getElementById("resultado").innerHTML = "O valor do XP deve estar entre 0(mínimo) e 15000(máximo).";
         return;
     }
 
@@ -32,7 +32,7 @@ function confirma() {
         return;
     }
     // Exibe o resultado no HTML
-    document.getElementById("resultado").innerHTML = `O Herói de nome ${nick} com seus ${rank} pontos atuais, está no nível de ${elo}.`;
+    document.getElementById("resultado").innerHTML = `O Herói de nome ${nick} com seu ${rank} XP atual, está no nível de ${elo}.`;
 }
 
 //condições para chamar o elo
