@@ -25,15 +25,14 @@ function confirma() {
     // Condições para chamar o elo
     let elo = determinaRank(rank);
 
-
-    nick = document.FormPontos.f_nick.value;
     // Validação para o campo nick
+    nick = document.FormPontos.f_nick.value;
     if (nick.length < 3) {
         document.getElementById("resultado").innerHTML = "O nick deve ter pelo menos 3 caracteres.";
         return;
     }
     // Exibe o resultado no HTML
-    document.getElementById("resultado").innerHTML = `${nick} com seus ${rank} pontos atuais, significa que está no Elo ${elo}.`;
+    document.getElementById("resultado").innerHTML = `O Herói de nome ${nick} com seus ${rank} pontos atuais, está no nível de ${elo}.`;
 }
 
 //condições para chamar o elo
