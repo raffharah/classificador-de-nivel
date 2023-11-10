@@ -1,3 +1,6 @@
+//campo adicionado para a variavel do nick do jogador
+var nick
+
 //Variaveis de elo, com array limite de 15000 pontos maximos
 let Ferro = [0, 1000];
 let Bronze = [1001, 2000];
@@ -15,15 +18,22 @@ function confirma() {
 
     //validador de condição, para garantia de pontos seja digitado corretamente
     if (rank < Ferro[0] || rank > Radiante[1]) {
-        document.getElementById("resultado").innerHTML = "O valor do elo deve estar entre 0(minimo) e 15000(maximo).";
+        document.getElementById("resultado").innerHTML = "O valor do elo deve estar entre 0(mínimo) e 15000(máximo).";
         return;
     }
 
     // Condições para chamar o elo
     let elo = determinaRank(rank);
 
+
+    nick = document.FormPontos.f_nick.value;
+    // Validação para o campo nick
+    if (nick.length < 3) {
+        document.getElementById("resultado").innerHTML = "O nick deve ter pelo menos 3 caracteres.";
+        return;
+    }
     // Exibe o resultado no HTML
-    document.getElementById("resultado").innerHTML = `O jogador com ${rank} está no Elo ${elo}.`;
+    document.getElementById("resultado").innerHTML = `${nick} com seus ${rank} pontos atuais, significa que está no Elo ${elo}.`;
 }
 
 //condições para chamar o elo
