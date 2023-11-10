@@ -13,11 +13,17 @@ function confirma() {
     // Captura o valor do campo de entrada
     let rank = parseInt(document.FormPontos.f_ponto.value);
 
+    //validador de condição, para garantia de pontos seja digitado corretamente
+    if (rank < Ferro[0] || rank > Radiante[1]) {
+        document.getElementById("resultado").innerHTML = "O valor do elo deve estar entre 0(minimo) e 15000(maximo).";
+        return;
+    }
+
     // Condições para chamar o elo
     let elo = determinaRank(rank);
 
     // Exibe o resultado no HTML
-    document.getElementById("resultado").innerHTML = `O jogador com ${rank} está na categoria ${elo}.`;
+    document.getElementById("resultado").innerHTML = `O jogador com ${rank} está no Elo ${elo}.`;
 }
 
 //condições para chamar o elo
@@ -39,6 +45,6 @@ function determinaRank(rank) {
     } else if (rank >= Radiante[0] && rank <= Radiante[1]) {
         return "Radiante";
     } else {
-        return "Categoria não encontrada";
+        return "não encontrado";
     }
 }
