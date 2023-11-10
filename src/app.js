@@ -2,14 +2,14 @@
 var nick
 
 //Variaveis de elo, com array limite de 15000 pontos maximos
-let Ferro = [0, 1000];
-let Bronze = [1001, 2000];
-let Prata = [2001, 5000];
-let Ouro = [5001, 7000];
-let Platina = [7001, 8000];
-let Ascendente = [8001, 9000];
-let Imortal = [9001, 10000];
-let Radiante = [10001, 15000];
+var Ferro = [0, 1000];
+var Bronze = [1001, 2000];
+var Prata = [2001, 5000];
+var Ouro = [5001, 7000];
+var Platina = [7001, 8000];
+var Ascendente = [8001, 9000];
+var Imortal = [9001, 10000];
+var Radiante = [10001, 15000];
 
 //variavel para armazenar o valor elo do usuario
 function confirma() {
