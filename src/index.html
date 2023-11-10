@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <form name="FormPontos" action="" method="post">
-        Digite seu nick : <input type="text" name="f_nick" placeholder="Nick" /><br />
-        Digite os seus pontos : <input type="text" name="f_ponto" placeholder="Pontos" /><br />
-        <input type="button" name="btn_confirma" value="Confirmar" onclick="confirma()" />
-        <input type="reset" name="btn_cancela" value="Cancelar" />
-    </form>
+    <div id="main">
+        <form name="FormPontos" action="" method="post">
+            Digite seu nick : <input type="text" name="f_nick" placeholder="Nick" /><i class="nick-icon"></i><br />
+            Digite os seus pontos : <input type="text" name="f_ponto" placeholder="Pontos" /><br />
+            <input class="button" type="button" name="btn_confirma" value="Confirmar" onclick="confirma()" />
+            <input class="button" type="reset" name="btn_cancela" value="Cancelar" />
+        </form>
+    </div>
     <p id="resultado"></p>
     <script src="app.js"></script>
 </body>
