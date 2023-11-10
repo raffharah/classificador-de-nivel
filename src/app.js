@@ -42,7 +42,3 @@ function determinaRank(rank) {
         return "Categoria não encontrada";
     }
 }
-
-let elo = determinaRank(rank);
-
-console.log("O jogador com " + rank + " está na categoria " + elo);
