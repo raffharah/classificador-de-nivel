@@ -28,15 +28,3 @@ form input {
     width: calc(100% - 20px);
     margin-bottom: 10px;
 }
-
-.nick-icon {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-}
