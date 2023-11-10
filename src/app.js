@@ -32,7 +32,7 @@ function confirma() {
         return;
     }
     // Exibe o resultado no HTML
-    document.getElementById("resultado").innerHTML = `O Herói de nome ${nick} com seu ${rank} XP atual, está no nível de ${elo}.`;
+    document.getElementById("resultado").innerHTML = `O Herói de nome ${nick} com ${rank} XP atual, está no nível de ${elo}.`;
 }
 
 //condições para chamar o elo
