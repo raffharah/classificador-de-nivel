@@ -30,7 +30,7 @@ O projeto consiste em três arquivos principais:
 - app.js
   >Arquivo JavaScript para o tratamento de dados e validações dos dados inseridos pelo usuario.
 - style.css
-  >Arquivo CSS para uma melhor usuabilidade do usuario para a entrada ou saida de dados.
+  >Arquivo CSS para uma melhor usabilidade do usuario para a entrada ou saida de dados.
 
 
 
